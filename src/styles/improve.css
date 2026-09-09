@@ -100,19 +100,21 @@
   padding: 120px 6%;
 }
 
-.section-heading {
+.improve-page .section-heading {
+  display: block;
+  width: 100%;
   max-width: 760px;
   margin-bottom: 65px;
 }
 
-.section-heading h2 {
+.improve-page .section-heading h2 {
   font-size: clamp(2.4rem, 5vw, 4.5rem);
   line-height: 1;
   letter-spacing: -0.04em;
   margin-bottom: 25px;
 }
 
-.section-heading > p:last-child {
+.improve-page .section-heading > p:last-child {
   color: #aeb9c9;
   font-size: 1.05rem;
   line-height: 1.8;
@@ -510,13 +512,16 @@
     font-size: 1rem;
   }
 
-  .section-heading {
-    margin-bottom: 45px;
-  }
+.improve-page .section-heading {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 45px;
+}
 
-  .section-heading h2 {
-    font-size: 2.5rem;
-  }
+.improve-page .section-heading h2 {
+  font-size: 2.5rem;
+}
 
   .learning-cycle,
   .tips-grid,

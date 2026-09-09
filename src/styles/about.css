@@ -84,7 +84,9 @@
   padding: 110px 6%;
 }
 
-.section-heading {
+.about-page .section-heading {
+  display: block;
+  width: 100%;
   max-width: 760px;
   margin-bottom: 60px;
 }
@@ -97,7 +99,7 @@
   margin-bottom: 25px;
 }
 
-.section-heading > p:last-child {
+.about-page .section-heading > p:last-child {
   color: #aeb9c9;
   font-size: 1.05rem;
   line-height: 1.8;
@@ -294,9 +296,12 @@
     font-size: 1rem;
   }
 
-  .section-heading {
-    margin-bottom: 45px;
-  }
+.about-page .section-heading {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 45px;
+}
 
   .section-heading h2,
   .creator-content h2 {
