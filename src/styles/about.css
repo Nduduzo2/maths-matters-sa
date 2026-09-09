@@ -1,0 +1,334 @@
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.about-page {
+  background: #07111f;
+  color: white;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.about-hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 6% 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(108, 140, 255, 0.08);
+  filter: blur(80px);
+  top: 5%;
+  right: -150px;
+}
+
+.about-hero-content {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero h1 {
+  max-width: 850px;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin-bottom: 30px;
+}
+
+.about-hero h1 span,
+.section-heading h2 span,
+.creator-content h2 span,
+.about-cta h2 span {
+  color: #6c8cff;
+}
+
+.section-label {
+  color: #6c8cff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.hero-description {
+  max-width: 650px;
+  color: #aeb9c9;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.about-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 6%;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 60px;
+}
+
+.section-heading h2,
+.creator-content h2 {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 25px;
+}
+
+.section-heading > p:last-child {
+  color: #aeb9c9;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   WHAT YOU'LL FIND
+   ========================================================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.about-card {
+  min-height: 230px;
+  padding: 32px;
+  background: #0b1728;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  background: #0e1b2e;
+  border-color: rgba(108, 140, 255, 0.45);
+}
+
+.about-card > span {
+  display: block;
+  color: #6c8cff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 45px;
+}
+
+.about-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  color: #9daabd;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CREATOR
+   ========================================================= */
+
+.creator-section {
+  max-width: 1000px;
+}
+
+.creator-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+}
+
+.creator-content > p {
+  color: #aeb9c9;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+   ========================================================= */
+
+.tech-section {
+  max-width: 1000px;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tech-list span {
+  padding: 14px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: #0b1728;
+  color: #dce4f2;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   SOURCES
+   ========================================================= */
+
+.sources-section {
+  max-width: 1000px;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.about-cta {
+  max-width: 1200px;
+  margin: 40px auto 100px;
+  padding: 100px 6%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #0b1728;
+  border: 1px solid rgba(108, 140, 255, 0.2);
+}
+
+.about-cta::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(108, 140, 255, 0.08);
+  filter: blur(70px);
+  right: -100px;
+  bottom: -150px;
+}
+
+.about-cta > div {
+  position: relative;
+  z-index: 1;
+}
+
+.about-cta h2 {
+  max-width: 750px;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  margin-bottom: 25px;
+}
+
+.about-cta p:not(.section-label) {
+  max-width: 600px;
+  color: #aeb9c9;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .about-hero {
+    min-height: 65vh;
+  }
+
+  .creator-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    min-height: auto;
+    padding: 100px 7% 80px;
+  }
+
+  .about-section {
+    padding: 80px 7%;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(3rem, 15vw, 4.5rem);
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    margin-bottom: 45px;
+  }
+
+  .section-heading h2,
+  .creator-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    min-height: auto;
+  }
+
+  .about-card > span {
+    margin-bottom: 30px;
+  }
+
+  .about-cta {
+    margin: 20px 7% 70px;
+    padding: 70px 8%;
+  }
+
+  .about-cta h2 {
+    font-size: 3rem;
+  }
+
+  .tech-list {
+    gap: 8px;
+  }
+
+  .tech-list span {
+    padding: 12px 17px;
+  }
+}

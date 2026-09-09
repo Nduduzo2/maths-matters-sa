@@ -1,0 +1,646 @@
+/* ================================
+   GENERAL OVERVIEW SECTIONS
+================================ */
+
+.overview-section {
+  position: relative;
+  padding: 140px 40px;
+  overflow: hidden;
+}
+
+.overview-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-intro {
+  max-width: 650px;
+}
+
+.section-number {
+  display: block;
+  margin-bottom: 22px;
+
+  color: #f4c542;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section-intro h2 {
+  color: #f8fafc;
+
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.05;
+
+  letter-spacing: -2.5px;
+}
+
+.section-intro h2 span {
+  color: #f4c542;
+}
+
+.section-intro p {
+  margin-top: 25px;
+
+  color: #94a3b8;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 30px;
+
+  color: #f8fafc;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: gap 0.3s ease, color 0.3s ease;
+}
+
+.text-link span {
+  color: #f4c542;
+  font-size: 20px;
+}
+
+.text-link:hover {
+  gap: 18px;
+  color: #f4c542;
+}
+
+
+/* ================================
+   WHY MATHEMATICS
+================================ */
+
+.why-section {
+  background: #091525;
+}
+
+.why-section .overview-container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.idea-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.idea-card {
+  padding: 32px;
+
+  min-height: 220px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease;
+}
+
+.idea-card:last-child {
+  grid-column: span 2;
+}
+
+.idea-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(244, 197, 66, 0.35);
+
+  background: rgba(244, 197, 66, 0.035);
+}
+
+.idea-icon {
+  margin-bottom: 35px;
+
+  color: #f4c542;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.idea-card h3 {
+  margin-bottom: 12px;
+
+  color: #f8fafc;
+
+  font-size: 24px;
+}
+
+.idea-card p {
+  color: #94a3b8;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   AI SECTION
+================================ */
+
+.ai-section {
+  background: #07111f;
+}
+
+.ai-container {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.ai-visual {
+  position: relative;
+
+  width: 420px;
+  height: 420px;
+
+  margin: 0 auto;
+}
+
+.ai-core {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 140px;
+  height: 140px;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(244, 197, 66, 0.45);
+  border-radius: 50%;
+
+  background: rgba(244, 197, 66, 0.06);
+
+  box-shadow: 0 0 80px rgba(244, 197, 66, 0.08);
+
+  animation: aiFloat 5s ease-in-out infinite;
+}
+
+.ai-core span {
+  color: #f4c542;
+
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.ai-ring {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.ring-one {
+  width: 270px;
+  height: 150px;
+
+  transform: translate(-50%, -50%) rotate(30deg);
+
+  animation: aiOrbit 12s linear infinite;
+}
+
+.ring-two {
+  width: 360px;
+  height: 210px;
+
+  transform: translate(-50%, -50%) rotate(-30deg);
+
+  animation: aiOrbitReverse 17s linear infinite;
+}
+
+.ai-equation {
+  position: absolute;
+
+  color: #cbd5e1;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  opacity: 0.7;
+
+  animation: equationFloat 4s ease-in-out infinite;
+}
+
+.equation-one {
+  top: 65px;
+  left: 85px;
+}
+
+.equation-two {
+  right: 55px;
+  top: 130px;
+
+  color: #f4c542;
+
+  animation-delay: 1s;
+}
+
+.equation-three {
+  bottom: 80px;
+  left: 75px;
+
+  animation-delay: 2s;
+}
+
+
+/* ================================
+   SOUTH AFRICA
+================================ */
+
+.sa-section {
+  background: #091525;
+}
+
+.centered {
+  max-width: 720px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.centered .section-number {
+  text-align: center;
+}
+
+.centered p {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sa-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  margin-top: 70px;
+}
+
+.sa-preview-card {
+  position: relative;
+
+  min-height: 340px;
+
+  padding: 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #07111f;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.sa-preview-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(244, 197, 66, 0.35);
+}
+
+.sa-preview-card.featured {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(244, 197, 66, 0.08),
+      rgba(7, 17, 31, 1) 65%
+    );
+
+  border-color: rgba(244, 197, 66, 0.2);
+}
+
+.preview-label {
+  color: #f4c542;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sa-preview-card h3 {
+  margin-top: 35px;
+
+  color: #f8fafc;
+
+  font-size: 27px;
+  line-height: 1.15;
+}
+
+.sa-preview-card p {
+  margin-top: 18px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.sa-preview-card a {
+  margin-top: auto;
+  padding-top: 30px;
+
+  color: #f8fafc;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: color 0.3s ease;
+}
+
+.sa-preview-card a span {
+  margin-left: 8px;
+  color: #f4c542;
+}
+
+.sa-preview-card a:hover {
+  color: #f4c542;
+}
+
+
+/* ================================
+   IMPROVE CTA
+================================ */
+
+.improve-section {
+  position: relative;
+
+  padding: 160px 40px;
+
+  overflow: hidden;
+
+  background: #07111f;
+
+  text-align: center;
+}
+
+.improve-glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: rgba(244, 197, 66, 0.05);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+.improve-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.improve-container .section-number {
+  text-align: center;
+}
+
+.improve-container h2 {
+  color: #f8fafc;
+
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.05;
+
+  letter-spacing: -3px;
+}
+
+.improve-container h2 span {
+  color: #f4c542;
+}
+
+.improve-container p {
+  max-width: 650px;
+
+  margin: 30px auto 0;
+
+  color: #94a3b8;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.improve-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 40px;
+  padding: 16px 25px;
+
+  color: #07111f;
+
+  background: #f4c542;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.improve-button:hover {
+  transform: translateY(-4px);
+  background: #ffd85c;
+}
+
+.improve-button span {
+  font-size: 20px;
+}
+
+
+/* ================================
+   SCROLL REVEAL
+================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes aiFloat {
+  0%, 100% {
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    transform: translate(-50%, calc(-50% - 12px));
+  }
+}
+
+@keyframes aiOrbit {
+  from {
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(390deg);
+  }
+}
+
+@keyframes aiOrbitReverse {
+  from {
+    transform: translate(-50%, -50%) rotate(-30deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(-390deg);
+  }
+}
+
+@keyframes equationFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 950px) {
+
+  .overview-section {
+    padding: 110px 30px;
+  }
+
+  .why-section .overview-container,
+  .ai-container {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .section-intro {
+    max-width: 750px;
+  }
+
+  .ai-visual {
+    order: 2;
+  }
+
+  .ai-container .section-intro {
+    order: 1;
+  }
+
+  .sa-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sa-preview-card {
+    min-height: 280px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .overview-section {
+    padding: 90px 20px;
+  }
+
+  .section-intro h2 {
+    letter-spacing: -1.5px;
+  }
+
+  .idea-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .idea-card:last-child {
+    grid-column: span 1;
+  }
+
+  .ai-visual {
+    width: 300px;
+    height: 300px;
+  }
+
+  .ai-core {
+    width: 105px;
+    height: 105px;
+  }
+
+  .ai-core span {
+    font-size: 28px;
+  }
+
+  .ring-one {
+    width: 210px;
+    height: 120px;
+  }
+
+  .ring-two {
+    width: 280px;
+    height: 160px;
+  }
+
+  .improve-section {
+    padding: 110px 20px;
+  }
+
+  .improve-container h2 {
+    letter-spacing: -2px;
+  }
+}

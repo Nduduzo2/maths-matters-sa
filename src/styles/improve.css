@@ -1,0 +1,566 @@
+/* =========================================================
+   IMPROVE & RESOURCES PAGE
+   ========================================================= */
+
+.improve-page {
+  background: #07111f;
+  color: white;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.improve-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 6% 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.improve-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(108, 140, 255, 0.08);
+  filter: blur(80px);
+  top: 10%;
+  right: -150px;
+}
+
+.improve-hero-content {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-label {
+  color: #6c8cff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.improve-hero h1 {
+  max-width: 850px;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin-bottom: 30px;
+}
+
+.improve-hero h1 span,
+.section-heading h2 span,
+.improve-cta h2 span {
+  color: #6c8cff;
+}
+
+.hero-description {
+  max-width: 650px;
+  color: #aeb9c9;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 24px;
+  background: #6c8cff;
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  background: #819bff;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.improve-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 6%;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 65px;
+}
+
+.section-heading h2 {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 25px;
+}
+
+.section-heading > p:last-child {
+  color: #aeb9c9;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   LEARNING CYCLE
+   ========================================================= */
+
+.learning-cycle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.cycle-step {
+  min-height: 230px;
+  padding: 32px;
+  background: #0b1728;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.cycle-step:hover {
+  transform: translateY(-6px);
+  border-color: rgba(108, 140, 255, 0.45);
+}
+
+.cycle-step > span {
+  display: block;
+  color: #6c8cff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 45px;
+}
+
+.cycle-step h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.cycle-step p {
+  color: #9daabd;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   STUDY TIPS
+   ========================================================= */
+
+.study-section {
+  max-width: 1400px;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.tip-card {
+  padding: 35px;
+  background: #0a1626;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(108, 140, 255, 0.4);
+}
+
+.tip-card > span {
+  display: inline-block;
+  color: #6c8cff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.tip-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+}
+
+.tip-card p {
+  color: #9daabd;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PRACTICE ROUTINE
+   ========================================================= */
+
+.routine-section {
+  max-width: 1000px;
+}
+
+.routine {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.routine-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 30px;
+  padding: 35px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.routine-item > span {
+  color: #6c8cff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding-top: 4px;
+}
+
+.routine-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.routine-item p {
+  color: #9daabd;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   RESOURCES
+   ========================================================= */
+
+.resources-section {
+  max-width: 1400px;
+}
+
+.resource-group {
+  margin-top: 100px;
+}
+
+.resource-group-heading {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 25px;
+  align-items: start;
+  margin-bottom: 35px;
+}
+
+.resource-number {
+  color: #6c8cff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding-top: 5px;
+}
+
+.resource-group-heading h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.resource-group-heading p {
+  max-width: 650px;
+  color: #9daabd;
+  line-height: 1.7;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  padding: 30px;
+  background: #0b1728;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-6px);
+  background: #0e1b2e;
+  border-color: rgba(108, 140, 255, 0.45);
+}
+
+.resource-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 45px;
+}
+
+.resource-card-top span {
+  color: #6c8cff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resource-card-top span:last-child {
+  color: #748197;
+}
+
+.resource-card h4 {
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+}
+
+.resource-card p {
+  color: #9daabd;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.resource-card a {
+  margin-top: auto;
+  color: #6c8cff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.resource-card a:hover {
+  color: #9eb0ff;
+}
+
+
+/* =========================================================
+   RESOURCE SUBSECTIONS
+   ========================================================= */
+
+.resource-subsection {
+  margin-top: 60px;
+}
+
+.resource-subsection > h4 {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  color: #dce4f2;
+}
+
+
+/* =========================================================
+   PAST PAPERS
+   ========================================================= */
+
+.past-paper-section {
+  max-width: 1200px;
+}
+
+.past-paper-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.past-paper-grid article {
+  padding: 30px;
+  background: #0b1728;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+}
+
+.past-paper-grid article > span {
+  display: block;
+  color: #6c8cff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.past-paper-grid h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.past-paper-grid p {
+  color: #9daabd;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.improve-cta {
+  max-width: 1200px;
+  margin: 40px auto 100px;
+  padding: 100px 6%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #0b1728;
+  border: 1px solid rgba(108, 140, 255, 0.2);
+}
+
+.improve-cta::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(108, 140, 255, 0.08);
+  filter: blur(70px);
+  right: -100px;
+  bottom: -150px;
+}
+
+.improve-cta > div {
+  position: relative;
+  z-index: 1;
+}
+
+.improve-cta h2 {
+  max-width: 750px;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  margin-bottom: 25px;
+}
+
+.improve-cta p:not(.section-label) {
+  max-width: 600px;
+  color: #aeb9c9;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.improve-cta a {
+  color: #6c8cff;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .learning-cycle,
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .past-paper-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .improve-hero {
+    min-height: 70vh;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .improve-hero {
+    min-height: auto;
+    padding: 100px 7% 80px;
+  }
+
+  .improve-section {
+    padding: 85px 7%;
+  }
+
+  .improve-hero h1 {
+    font-size: clamp(3rem, 15vw, 4.5rem);
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    margin-bottom: 45px;
+  }
+
+  .section-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .learning-cycle,
+  .tips-grid,
+  .resource-grid,
+  .past-paper-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cycle-step {
+    min-height: auto;
+  }
+
+  .cycle-step > span {
+    margin-bottom: 30px;
+  }
+
+  .resource-group {
+    margin-top: 70px;
+  }
+
+  .resource-group-heading {
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+  }
+
+  .resource-group-heading h3 {
+    font-size: 1.7rem;
+  }
+
+  .resource-card {
+    min-height: 270px;
+  }
+
+  .routine-item {
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+  }
+
+  .improve-cta {
+    margin: 20px 7% 70px;
+    padding: 70px 8%;
+  }
+
+  .improve-cta h2 {
+    font-size: 3rem;
+  }
+}

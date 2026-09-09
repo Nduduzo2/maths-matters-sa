@@ -1,8 +1,18 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import HomeSections from "@/components/HomeSections";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
-    <main> 
-      <h1> Maths matters SA </h1>
-      <p>This is the home page of my Next.js application.</p>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <HomeSections />
+      </main>
+
+      <Footer />
+    </>
   );
 }
